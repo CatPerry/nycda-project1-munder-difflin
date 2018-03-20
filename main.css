@@ -1,0 +1,264 @@
+body{
+  font-family: verdana;
+}
+
+.wrapper{
+  width: 100%;
+  height: 300px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+h1{
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+}
+
+.panels{
+  list-style-type: none;
+  padding: 0;
+}
+
+.panels li{
+  position: relative;
+  width: 25%;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  float: left
+}
+
+.panels li div{
+  width: 100%;
+  padding: 50% 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*// ANIMATION STYLES //*/
+.panels div.back {
+	transform: rotateY(90deg);
+}
+.panels div.front {
+	position: absolute;
+}
+
+.panels li:hover div.front {
+	animation: twirl 0.2s ease-in forwards;
+}
+
+@keyframes twirl {
+	0%{ transform: rotateY(0deg); } 
+	100%{ transform: rotateY(90deg); }
+}
+
+.panels li:hover div.back {
+	animation: twirl-back 0.2s ease-in forwards;
+}
+
+@keyframes twirl-back {
+	0%{ transform: rotateY(90deg); } 
+	100%{ transform: rotateY(0deg); }
+}
+
+section {
+	height: 600px;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: auto;
+}
+
+img {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100%;
+    width: 100%;
+    min-width: 5%;
+    min-height: 5%;
+	padding: 0.5em;
+	align-items: center;
+}
+
+section.fadeIn {
+	animation: fadeIn 1.2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+section:nth-child(1) {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: auto;
+	background-color: #525F6E;
+	color: white;	
+}
+
+section:nth-child(2) {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: auto;
+	background-color: #5C5975;
+	color: white;	
+}
+
+section:nth-child(3) {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: 0;
+	background-color: #2F4573;
+	color: white;
+}
+
+section:nth-child(4) {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: 0;
+	background-color: #F5F3B3;
+	color: white;
+}
+
+
+footer {
+	max-height: 200px;
+	font-size: 2em;
+	justify-content: justify;
+	font-style: italic;
+}
+
+
+
+/*#row1 {
+	opacity: 0;
+	animation-duration: 0.3s;
+	animation-name: fadein;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#row2 {
+	opacity: 0;
+	animation-duration: 0.6s;
+	animation-name: fadein;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#row3 {
+	opacity: 0;
+	animation-duration: 0.9s;
+	animation-name: fadein;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#row4 {
+	opacity: 0;
+	animation-duration: 1.2s;
+	animation-name: fadein;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@media (min-width: 150px) and (max-width: 600px) {
+	div {
+		display: flex;
+		height: auto;
+	}
+}*/
