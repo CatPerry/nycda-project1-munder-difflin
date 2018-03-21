@@ -1,19 +1,42 @@
-body{
-  font-family: verdana;
+@font-face {
+	font-family: philosopher;
+	src: url(fonts/philosopher/philosopher-regular);
 }
 
-.wrapper{
-  width: 100%;
-  height: 300px;
-  max-width: 1200px;
-  margin: 40px auto;
+body {
+  font-family: philosopher;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#wrapper{
+	width: 100%;
+	height: 300px;
+	max-width: 1200px;
+	margin: 0px auto;
 }
 
 h1{
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 30px;
+	font-weight: normal;
+	font-size: 3em;
+	font-stretch: all;
+}
+
+h3 {
+	position: absolute;
+	left: 50px;
+	border: 10px;
+	border-color: white;
+	color: white;
+	font-size: 5em;
+}
+
+p {
+	padding: 50px;
+	font-size: 1.5em;
 }
 
 .panels{
@@ -27,7 +50,7 @@ h1{
   margin: 0;
   display: block;
   box-sizing: border-box;
-  float: left
+  float: left;
 }
 
 .panels li div{
@@ -69,10 +92,10 @@ h1{
 }
 
 section {
-	height: 600px;
 	padding: 0;
 	margin: 0;
 	opacity: 0;
+	height: 600px;
 	display: flex;
 	flex: 1;
 	flex-direction: row;
@@ -88,12 +111,12 @@ section {
 img {
 	display: flex;
 	flex-wrap: nowrap;
-	height: 100%;
-    width: 100%;
-    min-width: 5%;
+	max-height: 600px;
+/*    min-width: 60%;
     min-height: 5%;
-	padding: 0.5em;
+*/	padding: 0.5em;
 	align-items: center;
+	object-position: center;
 }
 
 section.fadeIn {
@@ -112,37 +135,7 @@ section.fadeIn {
     opacity: 1;
   }
 }
-section:nth-child(1) {
-	display: flex;
-	flex: 1;
-	flex-direction: row;
-	flex-flow: row nowrap;
-	flex-wrap: nowrap;
-	flex-basis: auto;
-	flex-shrink: auto;
-	justify-content: space-between;
-	flex: none;
-	margin: auto;
-	background-color: #525F6E;
-	color: white;	
-}
-
-section:nth-child(2) {
-	display: flex;
-	flex: 1;
-	flex-direction: row;
-	flex-flow: row nowrap;
-	flex-wrap: nowrap;
-	flex-basis: auto;
-	flex-shrink: auto;
-	justify-content: space-between;
-	flex: none;
-	margin: auto;
-	background-color: #5C5975;
-	color: white;	
-}
-
-section:nth-child(3) {
+.row1 {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
@@ -153,11 +146,9 @@ section:nth-child(3) {
 	justify-content: space-between;
 	flex: none;
 	margin: 0;
-	background-color: #2F4573;
-	color: white;
 }
 
-section:nth-child(4) {
+.row2 {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
@@ -168,8 +159,32 @@ section:nth-child(4) {
 	justify-content: space-between;
 	flex: none;
 	margin: 0;
-	background-color: #F5F3B3;
-	color: white;
+}
+
+.row3 {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: 0;
+}
+
+.row4 {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	flex-wrap: nowrap;
+	flex-basis: auto;
+	flex-shrink: auto;
+	justify-content: space-between;
+	flex: none;
+	margin: 0;
 }
 
 
@@ -180,85 +195,8 @@ footer {
 	font-style: italic;
 }
 
-
-
-/*#row1 {
-	opacity: 0;
-	animation-duration: 0.3s;
-	animation-name: fadein;
-	animation-fill-mode: forwards;
+.footer-imgs {
+	height: 100px;
+	display: flex;
+	flex-wrap: nowrap;
 }
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-#row2 {
-	opacity: 0;
-	animation-duration: 0.6s;
-	animation-name: fadein;
-	animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-#row3 {
-	opacity: 0;
-	animation-duration: 0.9s;
-	animation-name: fadein;
-	animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-#row4 {
-	opacity: 0;
-	animation-duration: 1.2s;
-	animation-name: fadein;
-	animation-fill-mode: forwards;
-
-}
-
-@keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-
-@media (min-width: 150px) and (max-width: 600px) {
-	div {
-		display: flex;
-		height: auto;
-	}
-}*/
