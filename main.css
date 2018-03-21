@@ -129,6 +129,7 @@ img {
 	display: flex;
 	flex-wrap: nowrap;
 	max-height: 600px;
+	max-width: 750px;
 	padding: 0.5em;
 	align-items: center;
 	object-position: center;
