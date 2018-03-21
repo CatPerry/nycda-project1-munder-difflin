@@ -10,7 +10,7 @@ body {
 .menu-on {
 	z-index: 1001;
 	position: fixed;
-	background-color: #000;
+	background-color: white;
 	right: 0;
 	top: 0;
 	padding: 10px;
@@ -18,7 +18,7 @@ body {
 .menu-on img {
 	height: 65px;
 	position: fixed;
-	background-color: #000;
+	background-color: #53B8C6;
 	right: 0;
 	top: 0;
 	padding: 0px;
@@ -38,17 +38,17 @@ body {
 	top: 0;
 	padding: 0px;
 	z-index: 1003;
-	opacity: 0;
+	opacity: 1;
 }
 nav {
 	position: fixed;
-	background-color: #000;
+	background-color: #53B8C6;
 	right: 0;
 	top: 0;
 	min-width: 200px;
 	z-index: 1002;
 	display: none;
-	opacity: 0.3;
+	opacity: 1;
 }
 nav ul li a {
 	line-height: 20px;
@@ -59,8 +59,14 @@ nav ul li a {
 #toggle-menu {
 	display: none;
 }
+#toggle-menu ~ .menu-off {
+	display: none;
+}
 #toggle-menu:checked ~ nav {
 	display: block;	
+}
+#toggle-menu:checked ~ .menu-on img {
+	opacity: 0;
 }
 #toggle-menu:checked ~ .menu-off {
 	display: block;
@@ -111,6 +117,7 @@ p {
 	height: 50px;
 	display: inline-grid;
 	position: relative;
+	align-items: stretch;
 }
 .panels {
 	list-style-type: none;
