@@ -2,66 +2,82 @@
 	font-family: philosopher;
 	src: url(fonts/philosopher/philosopher-regular);
 }
-
 body {
 	font-family: philosopher;
 	margin: 0;
 	padding: 0;
 }
-/*
-nav {
+.menu-on {
+	z-index: 1001;
+	position: fixed;
+	background-color: #000;
+	right: 0;
+	top: 0;
+	padding: 10px;
+}
+.menu-on img {
+	height: 65px;
+	position: fixed;
+	background-color: #000;
+	right: 0;
+	top: 0;
+	padding: 0px;
+}
+.menu-off {
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	padding: 10px 100px;
-	box-sizing: border-box;
-	transition: 0.5s;
+	right: 0;
+	bottom: 0;
+	height: 65px;
+	z-index: 1003;
 }
-
-nav h1 {
-	float: left;
-	font-weight: normal;
-	font-size: 6em;
-  	letter-spacing: 1px;
-  	margin: 0 0 0 0.1em;
-  	color: 323232;
-  	transition: 0.5s;
-  	display: flex;
+.menu-off img {
+	height: 65px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 0px;
+	z-index: 1003;
+	opacity: 0;
 }
-nav ul {
-	float: right;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-nav ul li {
-	list-style: none;
+nav {
+	position: fixed;
+	background-color: black;
+	right: 0;
+	top: 0;
+	min-width: 200px;
+	z-index: 1002;
+	display: none;
+	list-style-type: none;
+	opacity: 0.5;
 }
 nav ul li a {
 	line-height: 20px;
-	color: #262626;
-	padding: 5px 200px;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: 0.5s;
 	font-family: sans-serif; 
+	list-style-type: none;
 }
-*/
+#toggle-menu {
+	display: none;
+}
+#toggle-menu:checked ~ nav {
+	display: block;	
+}
+#toggle-menu:checked ~ .menu-off {
+	display: block;
+}
 a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
-
 h1{
 	font-weight: normal;
 	font-size: 6em;
   	letter-spacing: 1px;
   	margin: 0 0 0 0.1em;
-  	color: 323232;
+  	color: #323232;
 }
-
 h2{
 	font-weight: lighter;
 	font-size: 1.5em;
@@ -69,7 +85,6 @@ h2{
   	margin: 0 0 0 0.5em;
   	color: 323232;
 }
-
 h3 {
 	position: absolute;
 	left: 50px;
@@ -78,7 +93,6 @@ h3 {
 	color: white;
 	font-size: 5.5em;
 }
-
 h4 {
 	background-color: black;
 	color: white;
@@ -86,40 +100,38 @@ h4 {
 	margin-top: 1em;
 	padding: 0;
 }
-
 p {
-	font-size: 1em;
-	margin-left: 0.5em;
-	position: inherit;
+	font-size: 1.5em;
 }
-
 .customers {
 	padding: 50px;
 	font-size: 1.5em;
+	margin-left: 0.5em;
 }
-
 #wrapper{
 	width: 100%;
 	height: 50px;
-}
+	display: inline-grid;
 
+}
 .panels {
+	position: relative;
 	list-style-type: none;
 	padding: 0.5px;
 	margin-left: 0.5em;
 	font-family: sans-serif;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px;
 }
-
-.panels li{
+.panels li {
 	position: relative;
-	width: 25%;
+	width: 100%;
 	margin: 0;
-	display: block;
-	box-sizing: border-box;
-	float: left;
+/*	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 40px;*/
 	font-family: sans-serif;	
 }
-
 .panels li div{
 	width: 100%;
 	padding: 25% 0;
@@ -141,25 +153,20 @@ p {
 .panels div.front {
 	position: absolute;
 }
-
 .panels li:hover div.front {
 	animation: twirl 0.2s ease-in forwards;
 }
-
 @keyframes twirl {
 	0%{ transform: rotateY(0deg); } 
 	100%{ transform: rotateY(90deg); }
 }
-
 .panels li:hover div.back {
 	animation: twirl-back 0.2s ease-in forwards;
 }
-
 @keyframes twirl-back {
 	0%{ transform: rotateY(90deg); } 
 	100%{ transform: rotateY(0deg); }
 }
-
 section {
 	padding: 0;
 	margin: 0;
@@ -177,7 +184,6 @@ section {
 	flex: none;
 	margin: auto;
 }
-
 img {
 	display: flex;
 	flex-wrap: nowrap;
@@ -187,11 +193,9 @@ img {
 	align-items: center;
 	object-position: center;
 }
-
 section.fadeIn {
 	animation: fadeIn 1.2s forwards;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -216,7 +220,6 @@ section.fadeIn {
 	flex: none;
 	margin: 0;
 }
-
 .row2 {
 	display: flex;
 	flex: 1;
@@ -229,7 +232,6 @@ section.fadeIn {
 	flex: none;
 	margin: 0;
 }
-
 .row3 {
 	display: flex;
 	flex: 1;
@@ -242,7 +244,6 @@ section.fadeIn {
 	flex: none;
 	margin: 0;
 }
-
 .row4 {
 	display: flex;
 	flex: 1;
@@ -255,23 +256,22 @@ section.fadeIn {
 	flex: none;
 	margin: 0;
 }
-
 .about {
-	font-size: 1.5em;
+	font-size: 1em;
 	color: black;
 	text-align: center;
 	margin: 0;
 }
-
-
 footer {
 	height: 200px;
-	font-size: 1.5em;
+	font-size: 1em;
 	background-color: #6FC8D8;
 	margin: 0;
 	padding: 0.5;
 }
-
+.footer-icons{
+	height: 40px;
+}
 @media (min-width: 150px) and (max-width: 600px) {
 	div {
 		display: flex;
