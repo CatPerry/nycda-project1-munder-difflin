@@ -23,6 +23,7 @@
 			<h1>Munder Difflin</h1>
 			<h2>boutique papercraft, sustainable by design</h2>
 <!-- Below: Flip nav panels for the 4 types of customers: Book publishers, artists, business owners, stationery store owners/collectors -->
+			<div class="Pick your project/paper type below">
 			<div id="wrapper">
 				<ul class="panels">
 			      <li>
@@ -34,7 +35,7 @@
 			        <div class="back panel2b"><a href="#art">Creators</a></div>
 			      </li>
 			      <li>
-			        <div class="front panel3a"><a href="#project-leaders">Project</a></div>
+			        <div class="front panel3a"><a href="#project-leaders">Office</a></div>
 			        <div class="back panel3b"><a href="#project-leaders">Leaders</a></div>
 			      </li>
 			      <li>
@@ -51,20 +52,6 @@
 					<a name="book"></a>
 					<p class="customers"><strong>Publishers: We love the written word as much as you do. International and self-publishers alike come to us for quality.</strong> With Munder Difflin paper, we help create gripping novels that pull readers in. <br><br>Contact us for quotes on hundreds of hardcover and paperback materials, including sustaianably harvested paper.
 					<button id="modalBtn" class="button">Click here</button>
-					<div id="simpleModal" class="modal">
-						<div class="modal-content">
-							<div class="modal-header">
-								<span class="closeBtn">&times;</span>
-								<h2>Modal Header</h2>
-							</div>
-							<div class="modal-body"></div>
-							
-							<article>Hello, I am a modal! Great job, Cat!</article>
-							<article>WE are really gettign somewhere now~! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur, assumenda porro ipsam dolorum possimus nobis ea aut explicabo cupiditate quod magnam! Voluptatum minus consequuntur, rem ducimus soluta obcaecati impedit. </article>
-							</div>
-							<div class="modal-footer">
-								<h3>Modal Footer</h3>
-							</div>
 					</p>
 
 				</section>
@@ -76,7 +63,7 @@
 				</section>
 
 				<section class="row3">
-					<h3>Project Leaders</h3><a name="project-leaders"></a>
+					<h3>Office Leaders</h3><a name="project-leaders"></a>
 					<img src="images/8447353012_fd16b0080d_o.jpg">
 					<p class="customers"><strong>Businesses: It's how companies change the world.</strong> For ideas to flow and forge ahead, you must push boundaries. Agile-environment businesses stay on top, innovate, and increase value using ideas written down on paper. <br><br>We have just the right supplies for every business need. From printer paper to sticky notepads, form large-format presentation paper to letterhead, call us for a quote.  
 				 	</p>
@@ -100,6 +87,40 @@
 			<footer>
 				<p><a name="contact"></a><strong>Contact Us</strong><br>Munder Difflin<br>100 South Street<br>Eureka, CA 94710<br>415-382-2942</p>
 			</footer>
+ <!-- modals are below, and since they're different for each section, there are 4. And they're down here so that there are now crash issues with the z-index -->
+			<div id="simpleModal" class="modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="closeBtn">&times;</span>
+								<h2>How to Order From Us</h2>
+							</div>
+							<div class="modal-body">
+							<p>It's really easy to get an order placed with us or to get a quote on prices. </p>
+
+							<p>WE are really gettign somewhere now~! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur, assumenda porro ipsam dolorum possimus nobis ea aut explicabo cupiditate quod magnam! Voluptatum minus consequuntur, rem ducimus soluta obcaecati impedit. </p>
+
+							<form id="simple-form">
+								<ul>
+									<li><label for="myName">Name:</label><input type="text" name="myName" id="myName"></li>
+
+									<li><label for="email">Email:</label>
+									<input type="text" name="email" id="email"></li>
+
+									<li><label for="phone">Phone:</label><input type="tel" name="phone" id="phone" placeholder="917-222-2222"></li>
+
+									<li><label for="comments">Comments:</label>
+									<input type="text" name="comments" id="comments"></li>
+							</form>
+
+							<div class="modal-footer">
+								<h2>Contact Us</h2>
+								<p>
+									Munder Difflin
+									100 South Street
+									Eureka, CA 94710
+									415-382-2942
+								</p>
+							</div>
 
 		<script src="main.js"></script>
 	</body>
