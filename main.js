@@ -8,19 +8,20 @@ let fourthSection = sections[3];
 
 
 window.addEventListener("scroll", (event) => {
-  if (window.scrollY > 0) {
+  if (window.pageYOffset > 0) {
     firstSection.classList.add("fadeIn");
-  }
-  if (window.scrollY > 500) {
+  } 
+  if (window.pageYOffset > 500) {
     secondSection.classList.add("fadeIn");
   }
-  if (window.scrollY > 1200) {
+  if (window.pageYOffset > 1100) {
     thirdSection.classList.add("fadeIn");
   }
-  if (window.scrollY > 1700) {
+  if (window.pageYOffset > 1600) {
     fourthSection.classList.add("fadeIn");
   }
 });
 
+document.querySelector("panel1").style.backgroundColor = "#FFB169";
 
 });

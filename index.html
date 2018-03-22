@@ -3,7 +3,8 @@
 	<head>
 		<link rel="stylesheet" href="main.css">
 		<title>Munder Difflin</title>
-		<input id="toggle-menu" type="checkbox"/>
+<!-- Hamburger menu using CSS Checkboxes. Could have used JavaScipt event listener, but opted for this method for my first project. -->
+			<input id="toggle-menu" type="checkbox"/>
 			<label for="toggle-menu" class="menu-on"><img src="images/hamburger-icon.jpg" class="menu-on"></label>
 			<label for="toggle-menu" class="menu-off"><img src="images/close-x-circle.png" class="menu-off"></label>
 
@@ -18,18 +19,19 @@
 	</head>
 	
 	<body>
-			<h1>Munder Difflin</h1><a name="home"></a>
+			<a name="home"></a>
+			<h1>Munder Difflin</h1>
 			<h2>boutique papercraft, sustainable by design</h2>
-<!-- Flip nav panels for the 4 types of customers: Book publishers, artists, business owners, stationery store owners -->
+<!-- Flip nav panels for the 4 types of customers: Book publishers, artists, business owners, stationery store owners/collectors -->
 			<div id="wrapper">
 				<ul class="panels">
 			      <li>
-			        <div class="front" style="background: #FFB169"><a href="#pulp">Pulp</a></div>
+			        <div class="front panel1" style="background: #FFB169"><a href="#book">Book</a></div>
 			        <div class="back" style="background: #FFC58F"><a href="#pulp">Lovers</a></div>
 			      </li>
 			      <li>
-			        <div class="front" style="background: #7A65D1"><a href="#art-makers">Art</a></div>
-			        <div class="back" style="background: #9C8BE4"><a href="#art-makers">Makers</a></div>
+			        <div class="front" style="background: #7A65D1"><a href="#art">Art</a></div>
+			        <div class="back" style="background: #9C8BE4"><a href="#art">Creators</a></div>
 			      </li>
 			      <li>
 			        <div class="front" style="background: #53B8C6"><a href="#project-leaders">Project</a></div>
@@ -37,21 +39,21 @@
 			      </li>
 			      <li>
 			        <div class="front" style="background: #FFE369"><a href="#stationery">Stationery</a></div>
-			        <div class="back" style="background: #FFEA8F"><a href="#stationery">Devotees</a></div>
+			        <div class="back" style="background: #FFEA8F"><a href="#stationery">Stars</a></div>
 			      </li>
 
 			    </ul>
 			</div>
-
+<!-- Main section, couldn't get responsiveness I'd like but it's great at 600-plus px width -->
 			<main id="main">
 				<section class="row1"><a name="shop"></a>
-					<h3>Pulp Lovers</h3>
+					<h3>Book Lovers</h3>
 					<img src="images/7697890446_b7fc9eb093_o.jpg">
-					<a name="pulp"></a><p class="customers"><strong>Book publishers: We love the written word as much as you do. International publishers and self publishers alike come to us for quality.</strong> With Munder Difflin paper, we help create gripping novels that pull readers in for hours. <br><br>Contact us for quotes on hundreds of hardcover and paperback materials, including sustaianably harvested paper.</p>
+					<a name="book"></a><p class="customers"><strong>Publishers: We love the written word as much as you do. International and self-publishers alike come to us for quality.</strong> With Munder Difflin paper, we help create gripping novels that pull readers in. <br><br>Contact us for quotes on hundreds of hardcover and paperback materials, including sustaianably harvested paper.</p>
 				</section>
 
 				<section class="row2">
-					<h3>Art Makers</h3><a name="art-makers"></a>
+					<h3>Art Creators</h3><a name="art"></a>
 					<img src="images/4319539575_f80c4f220d_o.jpg">
 					<p class="customers"><strong>Artists: Make art that moves the needle. </strong>Without paper, there would be no canvas to paint on, no art inspire, no culture to savor. <br><br>Print your passions in large or small format with our wide range of art paper, weights, and finishes. Bulk discounts for students and educational institutions; delivery included.</p>
 				</section>
@@ -64,13 +66,13 @@
 				</section>
 
 				<section class="row4">
-					<h3>Stationery <br>Devotees</h3><a name="stationery"></a>
-					<img src="images/230214871_ecebecd69d_o.jpg">
-					<p class="customers"><strong>Writers, travelers, stationery store owners: A well-timed card or letter is the difference between distance and togetherness.</strong> No matter where in the world you are, connecting with a letter or journaling your journey, may be the turning point that changes your life. <br><br>With just a few clicks, you can purchase your favorite stationery from indie designers we partner with. Plus, staionery store owners purchase from us directly at a discount; call for a quote.  
+					<h3>Stationery <br>Stars</h3><a name="stationery"></a>
+					<img src="images/stationery3.jpg">
+					<p class="customers"><strong>Writers, travelers, stationery store owners: A well-timed card or letter is the difference between distance and togetherness.</strong> <br><br>With just a few clicks, you can purchase your favorite stationery from indie designers we partner with. Plus, staionery store owners purchase from us directly at a discount; call for a quote.  
 				 	</p>
 				</section>
 			</main>
-
+<!-- Tried to tell a story here and in the above descriptions to flesh out my imaginary client, who is a woman 20s to 50s or other tastemakers-->
 			<aside class="about"> 
 				<h4><a name="our-story">Our Story</a></h4>
 				<p>Munder Diffilin puts sustainability at the fore of our production process. Our products are produced by smaller mills who follow higher sourcing standards to monitor the forests from which our paper products are produced. For every pound of paper we produce we plant 10 trees with the help of local youth in our producing cities across North America.</p>
