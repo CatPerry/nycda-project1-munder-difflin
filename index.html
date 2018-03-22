@@ -50,8 +50,8 @@
 					<h3>Book Lovers</h3>
 					<img src="images/7697890446_b7fc9eb093_o.jpg">
 					<a name="book"></a>
-					<p class="customers"><strong>Publishers: We love the written word as much as you do. International and self-publishers alike come to us for quality.</strong> With Munder Difflin paper, we help create gripping novels that pull readers in. <br><br>Contact us for quotes on hundreds of hardcover and paperback materials, including sustaianably harvested paper.
-					<button id="modalBtn" class="button">Click here</button>
+					<p class="customers"><strong>Publishers: We love the written word as much as you do. International and self-publishers alike come to us for quality.</strong> With Munder Difflin paper, we help create gripping novels that pull readers in. <br><br>Contact us for quotes on hundreds of hardcover and paperback materials, including sustaianably harvested paper.<br><br>
+					<button id="modalBtn1" class="button">Click here</button>
 					</p>
 
 				</section>
@@ -59,21 +59,26 @@
 				<section class="row2">
 					<h3>Art Creators</h3><a name="art"></a>
 					<img src="images/4319539575_f80c4f220d_o.jpg">
-					<p class="customers"><strong>Artists: Make art that moves the needle. </strong>Without paper, there would be no canvas to paint on, no art inspire, no culture to savor. <br><br>Print your passions in large or small format with our wide range of art paper, weights, and finishes. Bulk discounts for students and educational institutions; delivery included.</p>
+					<p class="customers"><strong>Artists: Make art that moves the needle. </strong>Without paper, there would be no canvas to paint on, no art inspire, no culture to savor. <br><br>Print your passions in large or small format with our wide range of art paper, weights, and finishes. Bulk discounts for students and educational institutions; delivery included.<br><br>
+					<button id="modalBtn2" class="button">Click here</button></p>
 				</section>
 
 				<section class="row3">
 					<h3>Office Leaders</h3><a name="project-leaders"></a>
 					<img src="images/8447353012_fd16b0080d_o.jpg">
-					<p class="customers"><strong>Businesses: It's how companies change the world.</strong> For ideas to flow and forge ahead, you must push boundaries. Agile-environment businesses stay on top, innovate, and increase value using ideas written down on paper. <br><br>We have just the right supplies for every business need. From printer paper to sticky notepads, form large-format presentation paper to letterhead, call us for a quote.  
-				 	</p>
+					<p class="customers"><strong>Office Supplies: With them, it's how companies change the world.</strong> For ideas to flow and forge ahead, you must push boundaries. Agile-environment businesses stay on top, innovate, and increase value using ideas written down on paper. <br><br>We have just the right supplies for every business need. From printer paper to sticky notepads, form large-format presentation paper to letterhead, call us for a quote.  
+				 	<br><br>
+					<button id="modalBtn3" class="button">Click here</button>
+					</p>
 				</section>
 
 				<section class="row4">
 					<h3>Stationery <br>Stars</h3><a name="stationery"></a>
 					<img src="images/stationery3.jpg">
 					<p class="customers"><strong>Writers, travelers, stationery store owners: A well-timed card or letter is the difference between distance and togetherness.</strong> <br><br>With just a few clicks, you can purchase your favorite stationery from indie designers we partner with. Plus, staionery store owners purchase from us directly at a discount; call for a quote.  
-				 	</p>
+				 	<br><br>
+					<button id="modalBtn4" class="button">Click here</button>
+					</p>
 				</section>
 			</main>
 <!-- Tried to tell a story here and in the above descriptions to flesh out my imaginary client, who is a woman 20s to 50s or other tastemakers-->
@@ -87,7 +92,7 @@
 			<footer>
 				<p><a name="contact"></a><strong>Contact Us</strong><br>Munder Difflin<br>100 South Street<br>Eureka, CA 94710<br>415-382-2942</p>
 			</footer>
- <!-- modals are below, and since they're different for each section, there are 4. And they're down here so that there are now crash issues with the z-index -->
+ <!-- Modal is below. And it's down here so that there are no crash issues with the z-index of other elements on the page -->
 			<div id="simpleModal" class="modal">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -95,21 +100,24 @@
 								<h2>How to Order From Us</h2>
 							</div>
 							<div class="modal-body">
-							<p>It's really easy to get an order placed with us or to get a quote on prices. </p>
+							<p>It's really easy—and fast—to get an order placed with us or to get a quote on prices. We answer every inquiry on the same business day. </p>
 
-							<p>WE are really gettign somewhere now~! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur, assumenda porro ipsam dolorum possimus nobis ea aut explicabo cupiditate quod magnam! Voluptatum minus consequuntur, rem ducimus soluta obcaecati impedit. </p>
-
+							<p>We're really getting somewhere now! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consectetur, assumenda porro ipsam dolorum possimus nobis ea aut explicabo cupiditate quod magnam! Voluptatum minus consequuntur, rem ducimus soluta obcaecati impedit. </p>
+<!-- added an information form for patrons to submit their info for a quote -->
 							<form id="simple-form">
 								<ul>
-									<li><label for="myName">Name:</label><input type="text" name="myName" id="myName"></li>
+									<li><label for="myName">Name: </label><input type="text" name="myName" id="myName"></li>
 
-									<li><label for="email">Email:</label>
-									<input type="text" name="email" id="email"></li>
+									<li><label for="email">Email: </label>
+									<input type="text" name="email" id="email" placeholder="youremail@email.com"></li>
 
-									<li><label for="phone">Phone:</label><input type="tel" name="phone" id="phone" placeholder="917-222-2222"></li>
+									<li><label for="phone">Phone: </label><input type="tel" name="phone" id="phone" placeholder="917-222-2222"></li>
 
-									<li><label for="comments">Comments:</label>
-									<input type="text" name="comments" id="comments"></li>
+									<li><label for="comments">Comments: </label>
+									<textarea name="comments" id="comments" rows="5" cols="50"></textarea></li>
+									<div id="submit-button">
+										<input type="submit" value="  Submit   ">
+									</div>
 							</form>
 
 							<div class="modal-footer">
