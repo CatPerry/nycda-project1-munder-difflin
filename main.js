@@ -22,6 +22,6 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
-document.querySelector("panel1").style.backgroundColor = "#FFB169";
+// document.querySelector("panel1").style.backgroundColor = "#FFB169";
 
 });
