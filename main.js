@@ -22,6 +22,28 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
-// document.querySelector("panel1").style.backgroundColor = "#FFB169";
+//get modal elements
+let modal = document.getElementById("simpleModal");
+//get open modal
+let modalBtn = document.getElementById("modalBtn");
+// get close button
+let closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+//listen for click on modal btn
+modalBtn.addEventListener("click", (openModal) => {
+  modal.style.display = "block";
+});
+closeBtn.addEventListener("click", (closeModal) => {
+  modal.style.display = "none";
+});
+
+//listen for click outside modal window to close modal
+window.addEventListener("click", clickOutside); 
+
+function clickOutside(event) {
+  if(event.target == modal) {
+  modal.style.display = "none";
+  }
+};
 
 });
