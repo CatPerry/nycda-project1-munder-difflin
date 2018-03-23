@@ -30,37 +30,33 @@ let modalBtn2 = document.getElementById("modalBtn2");
 let modalBtn3 = document.getElementById("modalBtn3");
 let modalBtn4 = document.getElementById("modalBtn4");
 // get close button
-let closeBtn1 = document.getElementsByClassName("closeBtn")[0];
-let closeBtn2 = document.getElementsByClassName("closeBtn")[1];
-let closeBtn3 = document.getElementsByClassName("closeBtn")[2];
-let closeBtn4 = document.getElementsByClassName("closeBtn")[3];
-
+let closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 //listen for click on modal btn
 modalBtn1.addEventListener("click", (openModal) => {
   modal.style.display = "block";
 });
-closeBtn1.addEventListener("click", (closeModal) => {
+closeBtn.addEventListener("click", (closeModal) => {
   modal.style.display = "none";
 });
 modalBtn2.addEventListener("click", (openModal) => {
   modal.style.display = "block";
 });
-closeBtn2.addEventListener("click", (closeModal) => {
+closeBtn.addEventListener("click", (closeModal) => {
   modal.style.display = "none";
 });
 
 modalBtn3.addEventListener("click", (openModal) => {
   modal.style.display = "block";
 });
-closeBtn3.addEventListener("click", (closeModal) => {
+closeBtn.addEventListener("click", (closeModal) => {
   modal.style.display = "none";
 });
 
 modalBtn4.addEventListener("click", (openModal) => {
   modal.style.display = "block";
 });
-closeBtn4.addEventListener("click", (closeModal) => {
+closeBtn.addEventListener("click", (closeModal) => {
   modal.style.display = "none";
 });
 

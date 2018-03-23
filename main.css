@@ -330,7 +330,7 @@ modal button tutorial courtesy of https://www.youtube.com/watch?v=6ophW7Ask_0
 .modal-footer {
 	background-color: #FFE369;
 	padding: 10px;
-	text-align: center;
+	text-align: left;
 	width: 100%;
 }
 .closeBtn {
